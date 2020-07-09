@@ -76,11 +76,11 @@ public class GUI {
         System.out.println("Wpisz ilość:");
         int amount = Integer.parseInt(scanner.nextLine());
         System.out.println("Wpisz kod kreskowy:");
-        long barcode = Long.parseLong(scanner.nextLine());
+        long barCode = Long.parseLong(scanner.nextLine());
         System.out.println("Wpisz kategorię:");
         String category = scanner.nextLine();
 
-        SQLdb.saveProduct(name, amount, barcode, category);
+        SQLdb.saveProduct(name, amount, barCode, category);
         System.out.println("Dodano nowy produkt");
         showMainMenu();
     }
